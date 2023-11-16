@@ -1,0 +1,38 @@
+snippet beg "begin{} / end{}" 
+\begin{$1}
+	$2
+\end{$1}
+$0
+endsnippet
+
+snippet code 
+
+\begin{lstlisting}[language=$1, frame = trBl, firstnumber = 1, escapeinside = {(*@}{@*)}]
+$2
+\end{lstlisting}
+
+endsnippet
+
+snippet sc
+
+\begin{center}
+\includegraphics[width = 1\textwidth]{wk-$1.png}
+\end{center}
+$0
+endsnippet
+
+snippet sec
+\section{$1}
+$0
+endsnippet
+
+snippet subsec
+\subsection{$1}
+$0
+endsnippet
+
+snippet chap
+\chapter{$1}
+$0
+endsnippet
+
