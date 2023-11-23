@@ -1,6 +1,6 @@
 # My Personal Dotfiles
 
-These simple dotfiles are made for my old thinkpad. I wanted something lightweight and simple. Plus the screen is only 12". This is incomplete and a work in progress. 
+Dots for the laptop and desktop. Incomplete and always a work in progress. 
 
 ![Image](example.png)
 
@@ -9,7 +9,6 @@ These simple dotfiles are made for my old thinkpad. I wanted something lightweig
 - OS: Arch linux
 - Bar: Polybar
 - Terminal: Alacritty
-- Editor: Neovim 
-- Colorscheme: Pywal
-
-
+- Editor: Neovim
+- Colorscheme: [Swamp](https://github.com/masroof-maindak/swamp.nvim)
+- Font: [Cozette](https://github.com/slavfox/Cozette)
