@@ -1,0 +1,108 @@
+configuration {
+    font:                       "Cozette";
+    terminal:                   "alacritty";
+	modi:                       "drun";
+    show-icons:                 false;
+	drun-display-format:        "{name}";  
+}
+
+* {
+    background:     #eee8d5;
+    foreground:     #002b36;
+    selected:       #859900;
+}
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       600px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    border:                      0px;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 horizontal;
+    children:                    [ "inputbar", "listbox" ];
+}
+
+inputbar {
+    enabled:                     false;
+}
+
+listbox {
+    spacing:                     20px;
+    padding:                     50px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "message", "listview" ];
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       4;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     30px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     20px 30px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+element normal.normal {
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+element normal.urgent {
+    text-color:                  @foreground;
+}
+element normal.active {
+    text-color:                  @foreground;
+}
+element selected.normal {
+    background-color:            @selected;
+    text-color: @background;
+}
+element selected.urgent {
+    text-color:                  @foreground;
+}
+element selected.active {
+    text-color:                  @foreground;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        32px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}

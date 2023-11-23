@@ -1,0 +1,16 @@
+---
+env:
+  TERM: alacritty
+
+window:
+  opacity: 0.9
+
+import:
+  - ~/.cache/wal/colors-alacritty.yml
+
+
+font:
+  normal:
+    family: Cozette
+
+
